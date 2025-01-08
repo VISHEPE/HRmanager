@@ -1,4 +1,4 @@
-const db = require('../server').db;  
+const db = require('../db'); 
 
 exports.findUserByUsernameAndPayroll = (username, payrollNumber, callback) => {
   db.query('SELECT * FROM users WHERE username = ? AND payroll_number = ?', [username, payrollNumber], callback);
