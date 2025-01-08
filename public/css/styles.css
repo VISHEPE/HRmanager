@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f5e9; /* Light background for the page */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #e6f5e9; /* Green background for the header */
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+/* Logo Styles */
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+
+
+/* Form Container */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px; /* Push form down */
+}
+
+/* Input and Button Styling */
+input {
+  width: 300px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  width: 300px;
+  padding: 12px;
+  background-color: #28a745; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Link Styles */
+a {
+  color: #28a745; /* Green color for links */
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Centering the main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* For pages like dashboard */
+h2 {
+  font-size: 24px;
+  color: #28a745;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+    top: 10px;
+    left: 10px;
+  }
+
+  header nav {
+    top: 60%;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  input,
+  button {
+    width: 100%;
+  }
+}
