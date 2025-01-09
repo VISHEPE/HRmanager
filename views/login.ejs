@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="/css/styles.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>HRM</h1>
-  </header>
-  <main>
-    <form action="/login" method="POST">
-      <input type="text" name="username" placeholder="Username" required>
-      <input type="text" name="payrollNumber" placeholder="Payroll Number" required>
-      <button type="submit">Login</button>
+    <h1>Login</h1>
+    <form method="POST" action="/login">
+        <label>Payroll Number</label>
+        <input type="text" name="payroll_number" required>
+        <label>First Name</label>
+        <input type="text" name="first_name" required>
+        <button type="submit">Login</button>
     </form>
-    <p>Don't have an account? <a href="/register">Register</a></p>
-  </main>
 </body>
 </html>

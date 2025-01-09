@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/styles/main.css"> <!-- Include your CSS -->
+</head>
+<body>
+    <header>
+        <h1>Welcome, <%= user.first_name %></h1>
+        <nav>
+            <ul>
+                <li><a href="/admin/dashboard">Dashboard</a></li>
+                <li><a href="/admin/add-employee">Add Employee</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Admin Dashboard</h2>
+        <p>Manage employees, payslips, and more.</p>
+
+        <section>
+            <h3>Quick Actions</h3>
+            <ul>
+                <li><a href="/admin/add-employee">Add Employee</a></li>
+                <li><a href="/admin/manage-payslips">Manage Payslips</a></li>
+                <li><a href="/admin/complaints">View Complaints</a></li>
+                <li><a href="/admin/holiday-requests">View Holiday Requests</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

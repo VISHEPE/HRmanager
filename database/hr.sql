@@ -97,3 +97,6 @@ CREATE TABLE attendance (
     FOREIGN KEY (employee_id) REFERENCES employees(id) ON DELETE CASCADE
 );
 
+INSERT INTO employees (first_name, last_name, payroll_number, email, phone_number, password, role, hire_date)
+VALUES ('Admin', 'HR', 'HR001', 'admin@example.com', '1234567890', '$2b$12$MxsE9LQ/tZya3BssoyHB5eMeC3g/TgNK.cvcUa5i/cMkpibqtIHwa
+', 'HR', CURDATE());
